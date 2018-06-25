@@ -5,7 +5,7 @@ module.exports = (title) => {
   if(!title) {
     return 'please input title';
   }
-  let lirik = 'kapanlagi.com lirik '+process.argv[2];
+  let lirik = 'kee.com lirik '+process.argv[2];
   return new Promise((resolve, reject) => {
     nightmare
       .goto(`https://www.google.com/search?q=${lirik.replace(/ /g,'+')}`)
